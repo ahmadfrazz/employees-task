@@ -1,0 +1,69 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Regular';
+  src: url('./assets/fonts/GeneralSans-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GeneralSans-Medium';
+  src: url('./assets/fonts/GeneralSans-Medium.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GeneralSans-Semibold';
+  src: url('./assets/fonts/GeneralSans-Semibold.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GeneralSans-Bold';
+  src: url('./assets/fonts/GeneralSans-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+* {
+  font-family: 'GeneralSans-Regular';
+}
+
+body {
+  margin: 0;
+}
+.ant-result-icon.ant-result-image > svg > g > path:nth-child(11){
+  fill: #3b3ec2 !important;
+}
+
+/* custom checkbox */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #3B3EC2 !important;
+  border-color: #3B3EC2 !important;
+}
+.ant-checkbox-checked::after {
+  border-color: #3B3EC2 !important ;
+}
+
+.customTable .ant-table-thead .ant-table-cell{
+    background: #F2F1F1;
+    font-family: 'GeneralSans-Medium';
+    color: #3D3D3D;
+}
+
+.customTable table{
+    min-width: 1000px;
+}
+
+.longText{
+    -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      /* max-width: 190px; */
+      overflow: hidden;
+  }
+
+  .table-responsive {
+    overflow-x: auto !important;
+  }
